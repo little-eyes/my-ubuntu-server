@@ -1,6 +1,6 @@
 version: '3.8'
 services:
-db:
+  db:
     container_name: pg_container
     image: postgres:13
     restart: always
