@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+db:
+    container_name: pg_container
+    image: postgres:13
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: arXiv.org
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/mnt/data/postgresql/data/
+volumes:
+  pg_data:
