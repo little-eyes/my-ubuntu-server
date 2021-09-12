@@ -1,0 +1,1 @@
+SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://superset:superset@api.jilongliao.com/superset'
